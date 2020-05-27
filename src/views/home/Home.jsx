@@ -1,4 +1,4 @@
-import { Layout } from 'antd';
+import { Layout } from "antd";
 import React from "react";
 import Bar from "../../components/bar";
 import Index from "../../components/echarts/Index";
@@ -9,18 +9,23 @@ class Home extends React.Component {
     collapsed: false,
   };
 
-  onCollapse = collapsed => {
+  onCollapse = (collapsed) => {
     this.setState({ collapsed });
   };
 
   render() {
     return (
-      <Layout style={{ minHeight: '100vh' }}>
-        <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
-          <Bar/>
+      <Layout style={{ minHeight: "100vh" }}>
+        <Sider
+          collapsible
+          collapsed={this.state.collapsed}
+          onCollapse={this.onCollapse}
+        >
+          <Bar />
+          <h1>123</h1>
         </Sider>
         <Layout className="site-layout">
-            <Index/>
+          <Index />
         </Layout>
       </Layout>
     );
