@@ -22,7 +22,7 @@ class Home extends React.Component {
           onCollapse={this.onCollapse}
         >
           <Bar />
-          <h1>123</h1>
+          <h1>1234</h1>
         </Sider>
         <Layout className="site-layout">
           <Index />
